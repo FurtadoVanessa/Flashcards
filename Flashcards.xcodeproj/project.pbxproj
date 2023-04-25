@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E4298D729F7507300AB10DC /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4298D629F7507300AB10DC /* Group.swift */; };
 		8EAD52C629EE07A300CF4FD7 /* FlashcardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAD52C529EE07A300CF4FD7 /* FlashcardsApp.swift */; };
 		8EAD52C829EE07A300CF4FD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAD52C729EE07A300CF4FD7 /* ContentView.swift */; };
 		8EAD52CA29EE07A300CF4FD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EAD52C929EE07A300CF4FD7 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E4298D629F7507300AB10DC /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		8EAD52C229EE07A300CF4FD7 /* Flashcards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashcards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EAD52C529EE07A300CF4FD7 /* FlashcardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardsApp.swift; sourceTree = "<group>"; };
 		8EAD52C729EE07A300CF4FD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				8EAD52C729EE07A300CF4FD7 /* ContentView.swift */,
 				8EAD52C929EE07A300CF4FD7 /* Assets.xcassets */,
 				8EAD52CB29EE07A300CF4FD7 /* Preview Content */,
+				8E4298D629F7507300AB10DC /* Group.swift */,
 			);
 			path = Flashcards;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E4298D729F7507300AB10DC /* Group.swift in Sources */,
 				8EAD52C829EE07A300CF4FD7 /* ContentView.swift in Sources */,
 				8EAD52C629EE07A300CF4FD7 /* FlashcardsApp.swift in Sources */,
 			);
