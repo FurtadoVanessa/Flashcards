@@ -1,19 +1,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var index = 0
     let cards: [(card: CardViewModel, color: Color)]
     var body: some View {
         VStack {
             Spacer()
 
-            ZStack {
+            TabView(selection: $index) {
                 ForEach(0..<cards.count) {
                     CardView(card: cards[$0].card, backgroundColor: cards[$0].color)
                         .padding(20).shadow(radius: 3)
                         .offset(x: $0 > 2 ? -CGFloat($0 - 2) * 10.0 : 0,
                                 y: 0)
                 }
-            }.padding(.leading)
+            }.tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
             
             HStack {
                 Spacer()
@@ -46,18 +47,22 @@ struct ContentView: View {
 extension ContentView {
     func previousQuestionAction() {
         print("Previous question action")
+        index-=1
     }
     
     func nextQuestionAction() {
         print("Next question action")
+        index+=1
     }
     
     func rightAnswerAction() {
         print("Right answer action")
+        index+=1
     }
     
     func wrongAnswerAction() {
         print("Wrong answer action")
+        index+=1
     }
 }
 
