@@ -1,7 +1,7 @@
 project "Flashcards.xcodeproj"
 scheme "Flashcards"
 sdk "iphonesimulator"
-device "iPhone 11"
+device "iPhone 14 Pro"
 code_coverage true
 xcargs '-parallelizeTargets'
 prelaunch_simulator true
