@@ -3,3 +3,9 @@ Pods/*
 *.dSYM.zip
 *.ipa
 *.xcworkspace
+
+Build
+
+# fastlane
+Fastlane/report.xml
+Fastlane/test_output
