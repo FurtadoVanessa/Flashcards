@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var index = 0
-    let cards: [(card: CardViewModel, color: Color)]
+    @State var cards: [(card: CardViewModel, color: Color)]
     var body: some View {
         VStack {
             Spacer()
@@ -78,10 +78,11 @@ struct ContentView_Previews: PreviewProvider {
     )
     static let colors: [Color] = [.blue, .red, .green, .purple, .yellow, .blue]
     
+    static let cardViewModel = group.cards.enumerated().map { index, card in
+        (CardViewModel(groupName: group.name, cardIndex: index+1, groupCount: group.cards.count, question: card.question, answer: card.answer), colors[index])
+    }
     static var previews: some View {
-        ContentView(cards: group.cards.enumerated().map { index, card in
-            (CardViewModel(groupName: group.name, cardIndex: index+1, groupCount: group.cards.count, question: card.question, answer: card.answer), colors[index])
-        })
+        ContentView(cards: cardViewModel.reversed())
     }
 }
 
