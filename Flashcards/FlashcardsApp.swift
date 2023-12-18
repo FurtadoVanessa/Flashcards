@@ -4,7 +4,7 @@ import SwiftUI
 struct FlashcardsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(cards: [])
+            ContentView(viewModel: FlashCardViewModel())
         }
     }
 }
